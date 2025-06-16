@@ -4,39 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>JoyCon</title>
 </head>
 <body>
+
+  
+</head>
+<body>
+
+  <div class="banner">
+    <h2>Welcome To Michi Joycon</h2>
+    <div class="button-group">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSckxFsRFnK6tnCbL7QQ0LsXoJTw7dsUe1HHikM6stBUa7cD4g/viewform?usp=header" target="_blank">profile</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwBR_l60w0Beq7Yb3B-hPieFGi2P-ARIuwHDkqN3MJu_zwLw/viewform?usp=header" target="_blank">contact</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>A</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Criador de Conteúdo</h3>
+        <p>Se você cria vídeos, fotos ou outros conteúdos, cadastre-se e tenha acesso a oportunidades com marcas locais.</p>
+      </div>
+      <div class="card">
+        <h3>Marca</h3>
+        <p>Cadastre sua empresa para encontrar criadores da Baixada Santista que se conectam com seu público.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
     <!-- buat komponen yang menggambarkan controller @MUTAMA --> 
      <div class="container-rightt">
 
     </div>
     <!--    [^]                -->
-         <h1> up </h1>
+        
          
     <!-- [<][v][>]      [B][A] -->
-      <h1>
-        <ul> left </ul>
-        <ul> down </ul>
-        <ul> right</ul>
-    </h1>
-
+      
     <!--           atau        -->
     <!--    [^]                -->
     <!-- [<]   [>]      [B][A] -->
     <!--    [v]                -->
     <!-- controller dibagi menjadi 2 bagian, kiri untuk arah, kanan untuk aksi --> 
-     <div> class="ab"
-        <div class="A">
-            <input type="text" id="A" placeholder="A" required>
-           
-        </div>
-        <div class="input-container">
-            <input type="text" id="B" placeholder="B" required>
-        </div>
-       <button id="button-A">A</button>
-       <button id="button-B">B</button>
-         </div>
+     
     <!-- banyak cara yang bisa kamu terapkan, sesuaikan saja dengan apa yang menurut kamu paling nyaman -->
     <!-- di kolom kiri yang memuat arah bisa dibuat dengan menggunakan skema display flex atau pun memanfaatkan posisi absolute yang memuat button-button -->
     <!-- di kolom kanan yang memuat aksi bisa dibuat dengan menggunakan skema display flex atau menggunakan block -->
@@ -63,7 +81,29 @@
     <!-- |    [v]                | -->
     <!-- n=======================n -->
     <!--  -->
+    <div class="container">
+        <div id="particles-js"></div>
+        <div id="hasil">Right</div>
+        <div class="joycon">
+        <div class="btn-left">
+            <button id="btnup" onclick="show('Up')">Up</button>
+            <div class="middle-buttons">
+                <button onclick="show('Left')">Left</button>
+                <button onclick="show('Down')">Down</button>
+                <button onclick="show('Right')">Right</button>
+            </div>
+        </div>
+        <div class="btn-right">
+            <button onclick="show('B')">B</button>
+            <button onclick="show('A')">A</button>
+        </div>
+        </div>
+    </div>
     <!-- kamu boleh menambahkan sprite di samping textscreen yang sudah ada @POINPLUS -->
     <!-- di ujung kanan bawah, tambahkan informasi NIM, nama, dan link Github @UTAMA -->
+    <footer>
+        <p> NIM 23430248, Misseliani Saputra,</p>
+      </footer>
+    
 </body>
 </html>
