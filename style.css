@@ -77,7 +77,7 @@ button {
     border-radius: 10px;
 }
   
-.btn-right button {
+.btn-right button .btn-left button {
     background-color: #f8cbd1;
 }
   
@@ -265,4 +265,3 @@ body {
   }
 
  
-</style>
