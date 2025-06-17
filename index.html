@@ -5,42 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>JoyCon</title>
-</head>
-<body>
-
-
-  <div class="banner">
-    <h2>Welcome To Michi Joycon</h2>
-    <div class="button-group">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSckxFsRFnK6tnCbL7QQ0LsXoJTw7dsUe1HHikM6stBUa7cD4g/viewform?usp=header" target="_blank">Right</a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwBR_l60w0Beq7Yb3B-hPieFGi2P-ARIuwHDkqN3MJu_zwLw/viewform?usp=header" target="_blank">Left</a>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Joycon</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>About</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus totam porro repellendus rem! Cupiditate aperiam deserunt, voluptatibus soluta, incidunt facilis iste, harum dicta molestias ex id. Eos quo rerum eveniet.</p>
-      </div>
-      <div class="card">
-        <h3>Contact</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis veritatis sed illum vitae quasi, aspernatur aperiam deserunt ea voluptatem quia dolore aut, odio praesentium numquam, veniam sit. Provident, eius earum.</p>
-      </div>
-    </div>
-  </div>
-
-</body>
-</html>
-
+    <title>JoyCon Misseliani Saputra</title>
+</head> <body>
 
 
     <!-- buat komponen yang menggambarkan controller @MUTAMA --> 
-     <div class="container-right">
+     <div class="controller">
 
     </div>
+
+    <div class="bg"></div>
+    <div class="cloud"></div>
+    <div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="cloud cloud3"></div>
+<div class="cloud cloud4"></div>
+<div class="cloud cloud5"></div>
+
     <!--    [^]                -->
         
          
@@ -69,25 +50,7 @@
     <!-- kamu bisa menggunakan event click, keydown, keyup, atau pun event lainnya -->
     <!-- kamu juga bisa menggunakan event listener atau pun event handler -->
     <!-- kamu juga bisa menggunakan event keydown untuk menangkap event keyboard -->
-    <div class="container">
-        <div id="particles-js"></div>
-        <div id="hasil">Left</div>
-        <div class="jc">
-        <div class="btn-left">
-            <button id="btnup" onclick="show('Up')">Up</button>
-            <div class="middle-buttons">
-                <button onclick="show('Left')">Left</button>
-                <button onclick="show('Down')">Down</button>
-                <button onclick="show('Right')">Right</button>
-            </div>
-        </div>
-        <div class="btn-right">
-            <button onclick="show('B')">B</button>
-            <button onclick="show('A')">A</button>
-        </div>
-        </div>
-    </div>
-    <!--     o--------------o      -->
+  <!--     o--------------o      -->
     <!--     | TAMPIL SINI  |      -->
     <!--     o--------------o      -->
     <!-- n=======================n -->
@@ -96,38 +59,32 @@
     <!-- |    [v]                | -->
     <!-- n=======================n -->
     <!--  -->
-    <div class="container">
-        <div id="particles-js"></div>
-        <div id="hasil">Right</div>
-        <div class="jc">
-        <div class="btn-left">
-            <button id="btnup" onclick="show('Up')">Up</button>
-            <div class="middle-buttons">
-                <button onclick="show('Left')">Left</button>
-                <button onclick="show('Down')">Down</button>
-                <button onclick="show('Right')">Right</button>
-            </div>
-        </div>
-        <div class="btn-right">
-            <button onclick="show('B')">B</button>
-            <button onclick="show('A')">A</button>
-        </div>
-        </div>
-    </div>
-    <!-- kamu boleh menambahkan sprite di samping textscreen yang sudah ada @POINPLUS -->
-    <!-- di ujung kanan bawah, tambahkan informasi NIM, nama, dan link Github @UTAMA -->
-   
-        <footer class="contact">
-            <div class="container-contact">
-                <p>Contact Me</p>
-                <a href><i class="bi bi-email"></i></a>
-                <a href><i class="bi bi-instagram"></i></a>
-               
-            </div>
-           
+       <div class="display" id="displayText">KLIK BUTTON</div>
+
+  <div class="controller">
+    <div class="dpad">
       
-        <p> NIM 23430248, Misseliani Saputra, https://github.com/michi8cam/wd-joycon-htmlcssjs</p>
-      </footer>
+      <div class="button up" onclick="animateButton(this, 'Up')">up</div>
+      <div class="button left" onclick="animateButton(this, 'Left')">left</div>
+      <div class="button down" onclick="animateButton(this, 'Down')">down</div>
+      <div class="button right" onclick="animateButton(this, 'Right')">right</div>
+    </div>
+    <div class="action">
+      <div class="btn" onclick="animateButton(this, 'B')">B</div>
+      <div class="btn" onclick="animateButton(this, 'A')">A</div>
+    </div>
+  </div>
+
+    <!-- kamu boleh menambahkan sprite di samping textscreen yang sudah ada @POINPLUS -->
+      
+    <!-- di ujung kanan bawah, tambahkan informasi NIM, nama, dan link Github @UTAMA -->
+      <div class="identity">
+          NIM 23430248 | Misseliani Saputra | <a href="https://github.com/michi8cam" target="_blank">GitHub</a>
+        
+         
+  </div>
+
+       <script src="script.js"></script>
     
 </body>
 </html>
